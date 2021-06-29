@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form">        
+        <div class="form-inner">
+            <div class="form__menu">
+                <div class="form__button">
+                    <div class="form__button-icon"></div>
+                    <div class="form__button-text">Ольга</div>
+                </div>
+                <div class="form__button">
+                    <div class="form__button-icon"></div>
+                    <div class="form__button-text">Ольга</div>
+                </div>
+                <div class="form__button">
+                    <div class="form__button-icon"></div>
+                    <div class="form__button-text">Ольга</div>
+                </div>       
+                <div class="form__button">
+                    <div class="form__button-icon form__button-make"></div>
+                    <div class="form__button-text">Создать новый образ</div>
+                </div> 
+                <div class="form__button">
+                    <div class="form__button-icon form__button-video"></div>
+                    <div class="form__button-text"></div>
+                </div>            
+                <div class="form__button">
+                    <div class="form__button-icon form__button-table"></div>
+                    <div class="form__button-text"></div>
+                </div>    
+                <div class="form__button">
+                    <div class="form__button-icon form__button-graph"></div>
+                    <div class="form__button-text"></div>
+                </div>   
+                <div class="form__button">
+                    <div class="form__button-icon form__button-info"></div>
+                    <div class="form__button-text"></div>
+                </div>   
+                <div class="form__button">
+                    <div class="form__button-icon form__button-setting"></div>
+                    <div class="form__button-text"></div>
+                </div>       
+            </div>
+            <div class="form__menu-info">
+                <div class="form__title">
+                    Личная информация
+                </div>
+                <div class="form__avatar">
+                    <div class="form__avatar-img"></div>
+                    <div class="form__avatar-text-info">
+                        <div class="form__avatar-text">Максимальный размер файла для фото или видео профиля - 15 МБ</div>
+                        <button class="form__avatar-info" type="file"><span>Загрузить фото или видео</span></button>
+                    </div>                        
+                </div>
+                <div class="form__first-last-name">
+                    <label class="form__first-name">Имя<br>
+                        <input type="text" placeholder="Введите имя">
+                    </label>
+                    <label class="form__last-name">Фамилия<br>
+                        <input type="text" placeholder="Введите фамилию">
+                    </label>
+                </div>
+                <div class="form__info-log">
+                    <label class="form__log-name">Имя пользователя<br>
+                        <input type="text" placeholder="Введите имя">
+                    </label>
+                    <label class="form__info-work">Вид деятельности<br>
+                        <input type="text" placeholder="Преподаватель">
+                    </label>
+                    <label class="form__link">Мои ссылки<br>
+                        <span>https://www.behance.net/</span><br>
+                        <input type="url" placeholder="Введите ссылку">
+                    </label>                        
+                </div>
+                <div class="form__comment">
+                    <label class="form__comment-label">О себе<br>
+                        <textarea class="form__comment-textarea"
+                            placeholder="Расскажите немного о себе"></textarea>
+                    </label>
+                </div>
+                <div class="form__title">
+                    Контактные даные
+                </div>
+                <div class="form__first-last-name form__first-last--margin">
+                    <label class="form__first-name">Место расположения<br>
+                        <select class="form__select"><br>
+                                <option>Россия</option>
+                                <option>Украина</option>
+                                <option>Беларусь</option>                              
+                                <option>Казахстан</option>                              
+                        </select>
+                    </label>
+                    <label class="form__last-name"><br>
+                        <input type="text" placeholder="Город проживания">
+                    </label>
+                </div>
+                <div class="form__first-last-name form__first-last-name--margin">
+                    <label class="form__first-name">Эл. адрес<br>
+                        <input class="form__input-margin" type="text" placeholder="Введите ваш Email">
+                    </label>
+                    <label class="form__last-name">Номер телефона<br>
+                        <input class="form__input-margin" type="tel" attern="2[0-9]{3}-[0-9]{3}" placeholder="38 (099) 568 432 3">
+                    </label>
+                </div>
+                <div class="form__info-log form__info-log--margin">
+                    <label class="form__log-name">Личный сайт<br>
+                        <input type="text" placeholder="Введите URL">
+                    </label>
+                </div>
+                <div class="form__profile">
+                    <div class="form__profile-info">
+                        <div class="form__profile-title">Показать в профиле</div>
+                        <div class="form__profile-title-text">Ваши контактные даные будут отображаться в Вашем профиле.</div>
+                    </div>
+                    <div class="form__profile-button">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__title form__title--margin">
+                    Безвозвратное удаление аккаунта
+                </div>
+                <div class="form__profile form__profile--line">
+                    <div class="form__profile-info">
+                        <div class="form__profile-title form__profile-title--line">Аккаунт удаляется навсегда.</div>
+                        <div class="form__profile-title-text form__profile-title-text-size">После удаления аккаунта на ---------  вы не сможете восстановить доступ к размещенным материалам и информации. 
+                            Мессенджер и сообщения также будут удалены.</div>
+                    </div>
+                    <div class="form__profile-button form__profile-button--position">
+                        <button>Удалить</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

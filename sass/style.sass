@@ -1,0 +1,482 @@
+body
+    font-family: Roboto, Inter, sans-serif
+
+.form
+    max-width: 1250px
+    margin: 10px auto    
+    .form-inner
+        display: flex
+    &__menu
+        display: flex
+        flex-direction: column
+        background: #C4C4C4       
+        width: 72px 
+        height: 1499px
+    &__button
+        display: flex
+        flex-direction: column        
+        margin: 0 auto
+        margin-left: 16px
+        margin-right: 16px
+        margin-top: 17px    
+        margin-bottom: 0    
+        &:first-child
+            margin-top: 87px
+        &:nth-child(5)
+            padding-top: 0px
+        &:nth-child(6)
+            padding-top: 0px
+            position: relative
+            top: -9px
+        &:nth-child(7)
+            padding-top: 0px
+            position: relative
+            top: -19px
+        &:nth-child(8)
+            padding-top: 0px 
+            position: relative
+            top: -8px  
+        &:nth-child(9)
+            padding-top: 0px 
+            position: relative
+            top: -17px           
+    &__button-icon
+        background: #FFFFFF
+        border-radius: 50px        
+        width: 40px
+        height: 40px
+        position: relative
+        cursor: pointer
+        transition: .3s
+        &:hover
+            transform: scale(1.1)
+    &__button-text        
+        margin-top: 9px
+        font-family: Inter
+        font-style: normal
+        font-weight: 500
+        font-size: 8px
+        line-height: 16px
+        text-align: center
+        color: #4F4F4F
+        text-transform: uppercase
+    &__button-make::before        
+        content: url('/img/+.png') 
+        position: absolute
+        top: 12px
+        left: 13px
+    &__button-video::before        
+        content: url('/img/videocam-outline.png') 
+        position: absolute
+        top: 12px
+        left: 10px
+    &__button-table::before        
+        content: url('/img/appointments.png') 
+        position: absolute
+        top: 11px
+        left: 12px
+    &__button-graph::before        
+        content: url('/img/area-chart-alt.png') 
+        position: absolute
+        top: 11px
+        left: 12px
+    &__button-info::before        
+        content: url('/img/info.png') 
+        position: absolute
+        top: 11px
+        left: 12px
+    &__button-setting::before        
+        content: url('/img/cog.png') 
+        position: absolute
+        top: 11px
+        left: 12px
+    &__menu-info
+        background: #FFFFFF
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1)
+        border-radius: 5px
+        height: 1502px
+        width: 1008px
+    &__title
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+        color: #323232
+        margin: 40px 0 0 24px
+    &__avatar
+        display: flex
+        margin-top: 24px    
+    &__avatar-img
+        width: 135px
+        height: 135px
+        background: #EEEEEE
+        border: 3px solid #4F4F4F
+        border-radius: 50%
+        margin-left: 24px
+    &__avatar-text-info
+        margin-left: 88px
+    &__avatar-text
+        font-family: Roboto
+        font-size: 20px
+        line-height: 120%
+        color: #532727
+        margin-top: 21px
+        &::before            
+            content: url('/img/exclamation-circle.png')
+            margin-right: 8px
+    &__avatar-info
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        margin-top: 30px
+        width: 283px
+        height: 39px
+        transition: .5s
+        &:hover
+            border: 1px solid #4F4F4F
+        &:focus            
+            border: 1px solid #4F4F4F
+    &__avatar-info[type="file"]
+        background: #FFFFFF
+    &__avatar-info span 
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 160%
+        color: #323232
+    &__avatar-info span::before
+        content: url('/img/download.png')
+        margin-right: 9px
+        position: relative
+        top: 2px
+    &__first-last-name
+        margin-top: 24px
+        margin-left: 24px
+    &__first-last-name--margin
+        margin-top: 10px
+    &__first-last--margin
+        margin-top: 14px
+    &__first-name
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 36px
+        color: #323232
+        margin-right: 21px
+    &__first-name input
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        outline: none
+    &__first-name input:hover
+        border: 1px solid #4F4F4F
+    &__first-name input:focus
+        border: 1px solid #4F4F4F
+    &__first-name input[placeholder]        
+        padding: 2px 291px 0px 16px
+    &__first-name input::placeholder
+        font-size: 16px           
+        color: #C4C4C4
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+    &__last-name
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 36px
+        color: #323232
+    &__last-name input
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        outline: none
+    &__last-name input:hover
+        border: 1px solid #4F4F4F
+    &__last-name input:focus
+        border: 1px solid #4F4F4F   
+    &__last-name input[placeholder]        
+        padding: 2px 291px 0px 16px
+    &__last-name input::placeholder
+        font-size: 16px
+        line-height: 19px       
+        color: #C4C4C4
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+    &__info-log
+        margin-top: 9px
+        margin-left: 24px
+    &__info-log--margin
+        margin-top: 7px
+    &__log-name
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 36px
+        color: #323232    
+    &__log-name input
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        outline: none
+        padding: 0px 782px 0px 16px
+    &__log-name input::placeholder
+        font-size: 16px
+        line-height: 19px       
+        color: #C4C4C4
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal    
+        padding-top: 1px    
+    &__log-name input:focus
+        border: 1px solid #4F4F4F
+    &__log-name input:hover
+        border: 1px solid #4F4F4F
+    &__info-work
+        margin-top: 7px
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 36px
+        color: #323232    
+    &__info-work input
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        outline: none
+        padding: 0px 781px 2px 16px
+    &__info-work input::placeholder
+        font-size: 16px
+        line-height: 19px       
+        color: #C4C4C4
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal    
+        padding-top: 1px    
+    &__info-work input:focus
+        border: 1px solid #4F4F4F
+    &__info-work input:hover
+        border: 1px solid #4F4F4F
+    &__link
+        margin-top: 8px
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 36px
+        color: #323232    
+    &__link input
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        outline: none
+        padding: 1px 782px 2px 16px
+    &__link input::placeholder
+        font-size: 16px
+        line-height: 19px       
+        color: #C4C4C4
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal    
+        padding-top: 1px    
+    &__link input:focus
+        border: 1px solid #4F4F4F
+    &__link input:hover
+        border: 1px solid #4F4F4F
+    &__link span 
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        display: block
+        margin-bottom: -20px
+        margin-top: 11px
+    &__comment
+        margin-top: 7px
+        margin-left: 24px
+        position: relative
+    &__comment-label
+        font-size: 14px
+        line-height: 36px 
+        color: #323232
+    &__comment-textarea
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        outline: none
+        padding: 5px 24px
+        width: 959px    
+        height: 120px    
+        resize: none
+    &__comment::before
+        content: ""
+        background: #BDBDBD 
+        width: 97.5%
+        height: 1px
+        position: absolute
+        top: 180px
+    &__comment-textarea::placeholder
+        font-size: 16px            
+        color: #C4C4C4
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal    
+        padding-top: 1px 
+    &__comment-textarea:focus
+        border: 1px solid #4F4F4F
+    &__comment-textarea:hover
+        border: 1px solid #4F4F4F
+    &__select        
+        font-size: 16px
+        line-height: 36px
+        color: #C4C4C4
+        border: 1px solid #C4C4C4
+        box-sizing: border-box
+        border-radius: 6px
+        width: 466px        
+        height: 39px
+        outline: none
+        padding-left: 14px               
+        margin-top: -2px
+        position: relative
+        top: 2px
+        padding: 4px 0px 2px 12px
+    &__select option
+        font-size: 16px
+        line-height: 19px 
+        font-family: Roboto 
+        color: #000       
+    &__select
+        &:hover
+            border: 1px solid #4F4F4F     
+    &__select
+        &:focus
+            border: 1px solid #4F4F4F
+    &__input-margin::placeholder
+        padding-left: 7px
+    .switch 
+        position: relative
+        display: inline-block
+        width: 60px
+        height: 30px
+    .switch input 
+        display:none
+    .slider 
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #fff
+        transition: .4s
+        border: 1px solid #C4C4C4
+    .slider:before 
+        position: absolute
+        content: ""
+        height: 20px
+        width: 20px
+        left: 4px
+        bottom: 4px
+        background-color: #C4C4C4
+        transition: .4s
+    input:checked + .slider:before 
+        background-color: #fff
+    input:checked + .slider 
+        background-color: #2196F3
+    input:focus + .slider 
+        box-shadow: 0 0 1px #2196F3
+    input:checked + .slider:before 
+        transform: translateX(26px)
+    .slider
+    .slider.round 
+        border-radius: 34px
+    .slider.round:before 
+        border-radius: 50%
+    &__profile
+        margin-top: 17px
+        margin-left: 24px
+        position: relative
+        display: flex
+        justify-content: space-between    
+        &:before
+            content: ""
+            background: #BDBDBD 
+            width: 97.5%
+            height: 1px
+            position: absolute
+            top: 68px
+    &__profile-title
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 16px       
+        color: #000
+    &__profile-title-text
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 20px
+        align-items: center        
+        color: rgb(50, 50, 50)
+        margin-top: 9px
+    &__profile-button
+        margin-right: 25px
+        margin-top: 14px
+    &__profile-button--position
+        position: relative
+        top: 21px
+    input[type=checkbox], input[type=radio] 
+        box-sizing: border-box
+        padding: 0px
+        position: relative
+        left: 15px
+    &__title--margin
+        margin-top: 52px
+    &__profile-title-text-size
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 160%   
+        color: #000000  
+        padding-top: 3px
+    &__profile-title--line
+        line-height: 19px
+        margin-bottom: 10px
+    &__profile--line
+        margin-top: 24px
+        margin-left: 24px
+        position: relative
+        display: flex
+        justify-content: space-between 
+        &::before
+            content: ""
+            background: #BDBDBD 
+            width: 97.5%
+            height: 1px
+            position: absolute
+            top: 84px
+    &__profile-button button
+        border: 1px solid #4F4F4F
+        box-sizing: border-box
+        border-radius: 5px
+        background: #FFFFFF
+        padding: 10px 41px
+        font-style: normal
+        font-weight: 500
+        font-size: 10px
+        line-height: 12px
+        color: #4F4F4F
+
+
+        
+
+
