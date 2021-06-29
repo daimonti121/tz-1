@@ -75,32 +75,32 @@ body {
     color: #4F4F4F;
     text-transform: uppercase; }
   .form__button-make::before {
-    content: url("/img/+.png");
+    content: url("../img/+.png");
     position: absolute;
     top: 12px;
     left: 13px; }
   .form__button-video::before {
-    content: url("/img/videocam-outline.png");
+    content: url("../img/videocam-outline.png");
     position: absolute;
     top: 12px;
     left: 10px; }
   .form__button-table::before {
-    content: url("/img/appointments.png");
+    content: url("../img/appointments.png");
     position: absolute;
     top: 11px;
     left: 12px; }
   .form__button-graph::before {
-    content: url("/img/area-chart-alt.png");
+    content: url("../img/area-chart-alt.png");
     position: absolute;
     top: 11px;
     left: 12px; }
   .form__button-info::before {
-    content: url("/img/info.png");
+    content: url("../img/info.png");
     position: absolute;
     top: 11px;
     left: 12px; }
   .form__button-setting::before {
-    content: url("/img/cog.png");
+    content: url("../img/cog.png");
     position: absolute;
     top: 11px;
     left: 12px; }
@@ -140,7 +140,7 @@ body {
     color: #532727;
     margin-top: 21px; }
     .form__avatar-text::before {
-      content: url("/img/exclamation-circle.png");
+      content: url("../img/exclamation-circle.png");
       margin-right: 8px; }
   .form__avatar-info {
     border: 1px solid #C4C4C4;
@@ -166,7 +166,7 @@ body {
     line-height: 160%;
     color: #323232; }
   .form__avatar-info span::before {
-    content: url("/img/download.png");
+    content: url("../img/download.png");
     margin-right: 9px;
     position: relative;
     top: 2px; }
