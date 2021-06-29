@@ -658,5 +658,10 @@ body {
   .form__profile-button button:hover {
     color: #FFFFFF;
     background: #C4C4C4; }
+  @media (max-width: 1058px) {
+    .form .form__menu {
+      height: 1628px; }
+    .form .form__menu-info {
+      height: 1628px; } }
 
 /*# sourceMappingURL=style.css.map */
